@@ -2,19 +2,25 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>04 - Flujo de Ejecución</title>
+	<title>05 - Flujo de Ejecución</title>
 </head>
 <body>
 	<?php
-		/*El flujo de ejecución siemre será de arriba hacia abajo, a menos que este
+		/*El flujo de ejecución siempre será de arriba hacia abajo, a menos que este
 		sea interrumpido por estructuras como: condicionales, bucles y funciones.
 		*/
 		echo "Primer mensaje<br/>";
 		//LLamando a la función imprimirMensaje
 		imprimirMensaje();
 
+		//Conesto estamos integrando un archivo externo y podemos usar las funciones de ese archivo
+		include("archivo_externo.php");
+
 		echo "Segundo mensaje<br/>";
 
+		//Esta es una función contenida en el archivo externo
+		funcionExterna();
+		
 		imprimirOtroMensaje();
 
 		//Creando una funcion, su código se ejecuta hasta que sea llamada

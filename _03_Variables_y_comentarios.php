@@ -17,7 +17,7 @@
 	el nombre siempre debe iniciar con el simbolo de dollar*/
 	$numero = 4;
 	$texto = "Esto es una cadena de texto (string)";
-	$boolean = true;
+	$boolean = true;	//1 si es verdadero, vacío si es falso
 
 	//El punto (.) se utiliza para concatenar un string con otros valores.
 	echo "Este es un valor numerico " . $numero;
@@ -25,5 +25,6 @@
 	echo "<br/>este es un valor booleano: " . $boolean . "<br/>";
 
 	//EL nombre de las variables puede ir dentro de las comillas(solo dobles) del mensaje concatenado
+	//Si se pone dentro de comillas simples se imprimirá el nombre de la variable
 	echo "Este es un valor numerico $numero";
 ?>

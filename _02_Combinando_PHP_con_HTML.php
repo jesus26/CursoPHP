@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>02 - Conmbinando PHP con HTML</title>
+	<title>02 - Combinando PHP con HTML</title>
 </head>
 <body>
 	Hola Mundo de PHP - Mensaje escrito en HTML
