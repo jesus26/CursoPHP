@@ -5,20 +5,27 @@
 	<title>Calculadora</title>
 </head>
 <body>
+	<!-- El action indica a donde se mandará la información del formulario -->
 	<form name="formulario" method="POST" action="calcular.php">
-		<label>Ingresa 3 valores numericos</label><br/>
+		<label>Ingresa 2 valores numericos</label><br/>
+		<br>
 		<input type="text" name="n1"><br/><br/>
+		<br>
 		<input type="text" name="n2"><br/><br/>
-		<input type="text" name="n3"> <br/><br/>
+		<br>
 		<label>Selecciona una operacion:<br/>
 			<select name="lista">
 				<option value="sumar">Sumar</option>
+				<option value="restar">Restar</option>
 				<option value="multiplicar">Multiplicar</option>
+				<option value="dividir">Dividir</option>
+				<option value="incrementar">Incrementar</option>
+				<option value="decrementar">Decrementar</option>
 			</select>
 		</label>
 		<br/>
 		<br/>
-		<input type="submit" value="Calcular">
+		<input type="submit" value="Calcular" id="enviar" name="enviar">
 	</form>
 </body>
 </html>

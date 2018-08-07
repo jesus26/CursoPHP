@@ -2,50 +2,28 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Funciones matematicas y cast</title>
+	<title>14 - Funciones matemáticas y casting</title>
 </head>
 <body>
 	<?php
+		//rand(), genera numeros aleatorios
+
 		//Sin argumentos
 		$num1 = rand();
 		echo "El número es $num1 <br><br>";
 
-		//Un argumento con parametros el minimo y el maximo
+		//Un argumento con parámetros el mínimo y el máximo
 		$num1 = rand(10,20);
 		echo "El número con parametros es $num1 <br><br>";
 
 		$numero = "10";
 
-		//Para convertir de un tipo a otro, se le pone el tipo entre parentesis antes de la variable a conevrtir.
+		//Para convertir de un tipo a otro, se le pone el tipo entre parentesis antes de la variable a conevertir.
 		$resultado = (int)$numero;
 
 		echo "El resultado es " . ($resultado + 3) . "<br><br>";
 
-		//&& es lo mismo que AND y || es lo mismo que OR.
-		//&& tiene más prioridad que AND
-
-		//Operador ternadio Condicion ? Valor si verdadero : valor si falso
-		$result = 5 < 3 ?  "Simon<br><br>" :  "Nel<br><br>";
-		echo $result;
-
-		$nombre = "Jesus";
-		$edad = 10;	
-
-		//Switch de condicionantes
-		switch (true) {
-			case $nombre == "Jesus" && $edad == 10:
-				echo "Caso 1";
-				break;
-			case $nombre == "Ernesto" && $edad == 12:
-				echo "Caso 2";
-				break;
-			default:
-				echo "Ningun caso";
-				break;
-		}
-
-		//Con la instruccion continue dentro de un for, se pasa directamente a la siguiente iteraccion sin ejecutar el codigo que sigue despues de 
-		//la instruccion.
+		//Con la instruccion continue dentro de un for, se pasa directamente a la siguiente iteraccion sin ejecutar el codigo que sigue despues de la instruccion.
 
 		//Con la instruccion break se sale del ciclo.
 		echo "<br><br>";
@@ -56,18 +34,16 @@
 				break;
 			}
 			echo "siguiente valor<br>";
-
 		}
 
 		echo "<br><br>";
 		for($i = 0; $i <= 10; $i++){
 			echo "Valor $i <br>";
 			if($i == 5){
-				echo "no se ejecuta la linea de abajo<br>";
+				echo "no se ejecuta lo siguiente de continue (pasa a la siguiente iteración)<br>";
 				continue;
 			}
 			echo "siguiente valor<br>";
-
 		}
 
 		echo "<br><br>";
@@ -93,7 +69,7 @@
 		//En PHP se pueden utilizar funciones con parametros por valor y parametros por referencia.
 
 		/*
-		Los parametros por valor no cambiar el valor original, solo se utilizan dentr de la funcion, en cambio
+		Los parametros por valor no cambiar el valor original, solo se utilizan dentro de la funcion, en cambio
 		lo parametros por referencia cambiar el valor original
 		*/
 

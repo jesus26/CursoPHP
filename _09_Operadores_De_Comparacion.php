@@ -59,19 +59,7 @@
 		}
 
 		/*
-		Una constante es un espacio en la memoria del ordenador cuyo valor no cambiará.
-		- una constante siempre va en mayusculas.
-		- su hambito siempre es global.
-		- no llevan el simbolo $
-		- siempre se definen con la función define().
-		- no pueden almacenar valores escalares (que se pueden dividir en valores más pequeños).
-		EJEMPLO:
-		define("CONSTANTE","Valor de constante",[true or false]); el tercer parametro no es obligatorio solo es
-		para especificar la sencibilidad de la declaracion de la constante cundo sea llamada.
-
-		leer constantes predefinidas por PHP por ejemplo __LINE__, __FILE__
-
-		para mostrar el resultado de POST en el mismo documento en el action del formulario se le ponen dos comillas solamente ""
+		para mostrar el resultado de POST en el mismo documento, en el action del formulario se le ponen dos comillas solamente ""
 		*/
 	?>
 		
